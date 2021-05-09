@@ -51,7 +51,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <img src="images/logo.png" width="20px," height="20px" alt="">
       &ensp;
-      <a class="navbar-brand" href="#"> Todo List</a>
+      <a class="navbar-brand" href="#"> ToDo List</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -90,12 +90,12 @@
         </div>
 
         <div class="txt">
-                <h2 class="text-center">Todo List</h2>
+                <h2 class="text-center">ToDo List</h2>
             </div>
       </div>
 
       <div class="form-group">
-        <label for="tit">Item Name</label>
+        <label for="tit">Task Name</label>
         <input
           type="email"
           class="form-control"
@@ -116,12 +116,12 @@
       </button>
 
       <div id="items" class="my-5">
-        <h3>Your Items</h3>
+        <h3>Your Tasks</h3>
         <table class="table">
           <thead>
             <tr>
               <th scope="col">SNo</th>
-              <th scope="col">Item Name</th>
+              <th scope="col">Task Name</th>
               <th scope="col">Description</th>
               <th scope="col">Action</th>
             </tr>
@@ -131,7 +131,7 @@
               <th scope="row">1</th>
               <td>cofee</td>
               <td>for the alpha</td>
-              <td><button class="btn btn-danger">Delete</button></td>
+              <td><button class="btn btn-success">Done</button></td>
             </tr>
           </tbody>
         </table>
@@ -157,7 +157,7 @@
                 <th scope="row">${index + 1}</th>
                 <td>${element[0]}</td>
                 <td>${element[1]}</td>
-                <td><button class="btn btn-sm btn-primary" onclick="del(${index})">Delete</button></td>
+                <td><button class="btn btn-sm btn-success" onclick="del(${index})">Done</button></td>
                 </tr>`;
         });
         tablebody.innerHTML = str;
